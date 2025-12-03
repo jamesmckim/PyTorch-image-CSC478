@@ -33,7 +33,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/ci-demo
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/pytorch-image-csc478
           tags: |
             type=ref,event=branch
             type=ref,event=tag
